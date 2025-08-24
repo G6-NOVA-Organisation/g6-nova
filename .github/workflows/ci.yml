@@ -1,14 +1,17 @@
 name: CI
+
 on:
+  workflow_dispatch:
   pull_request:
-    branches: [ main ]
   push:
-    branches: [ main ]
-  workflow_dispatch: {}
+    branches:
+      - main
+
 jobs:
   build:
+    name: CI / build   # 👈 add this line
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Sanity check
-        run: echo "✓ CI running"
+      - uses: actions/checkout@v3
+      - name: Run build
+        run: echo "Building..."
