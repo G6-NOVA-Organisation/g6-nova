@@ -2,4 +2,4 @@
 g6-nova
 
 
-This is my readme
+This is my readme2
