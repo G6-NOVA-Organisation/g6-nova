@@ -2,4 +2,4 @@
 g6-nova
 
 
-This is my readme2
+This is my readme that has beed edited
